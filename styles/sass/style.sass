@@ -1,58 +1,178 @@
-*
-    margin: 0
-    padding: 0
-    font-family: sans-serif
+$var1: #356EAD
+$var2: #1F3F68
+$var3: #5A98D0
+$var4: #FFFFFF
+$var5: #316099
+
 body
-    font-family: sans-serif
-    max-width: 1366px
-    max-height: 768px
-.container
-  .hero__navigation
-    width: 1200px
-    height: 48px
-    padding-left: 83px
-    padding-top: 40px
-    display: flex
-    justify-content: space-between
-    .hero__navigation-logo
-      width: 48px
-      height: 48px
-    .hero__navigation-menu
-      width: 32px
-      height: 32px
-  .hero__content
-    display: flex
-    justify-content: end
-    .hero__content-info
-      .hero__content-heading
-        width: 510px
-        height: 148px
-        margin-top: 100px
-        font-size: 61px
-        font-weight: 300
-        line-height: 74px
-        letter-spacing: 0.04em
-        color: #1f3f68
-      .hero__content-text
-        width: 425px
-        height: 82px
-        font-size: 16px
-        line-height: 26px
-        color: #1f3f68
-        letter-spacing: 0.05em
-        opacity: 0.6
-      .hero__content-btn
-        font-size: 16px
-        line-height: 26px
-        text-align: center
-        letter-spacing: 0.04em
-        color: #FFFFFF
-        background: #5A98D0
-        box-shadow: 5px 10px 20px rgba(53, 110, 173, 0.2)
-        border-radius: 10px
-        padding: 15px 50px
-    margin-top: 72px
-    .hero__content-illustration
-      background: url(/../images/illustration.jpg) no-repeat
-      width: 687.25px
-      height: 623.56px
+	padding: 0
+	margin: 0
+
+.container-hero
+	width: 100%
+	min-height: 650px
+	background: linear-gradient(0deg, rgba(152, 195, 232, 0.5) 8.84%, rgba(152, 195, 232, 0) 31.12%)
+	box-sizing: border-box
+	padding-top: 40px
+
+.hero__navigation
+	display: flex
+	justify-content: space-between
+	align-items: center
+	width: 100%
+	padding: 0px 83px 40px
+	box-sizing: border-box
+	&-menu
+		fill: $var1
+		&:hover
+			fill: $var2
+
+
+	&-menu
+		position: relative
+		z-index: 2
+
+
+.hero__content
+	width: 100%
+	height: calc(100% - 133px)
+	padding-left: 212px
+	box-sizing: border-box
+	position: relative
+	*
+		position: relative
+		z-index: 1
+
+	img
+		position: absolute
+		right: 30px
+		top: 0
+		height: 100%
+		z-index: 0
+
+	&-heading
+		width: 510px
+		font-family: 'Abhaya Libre', serif
+		font-size: 58px
+		line-height: 68px
+		letter-spacing: 0.04em
+		color: $var2
+		padding: 55px 0 30px 0
+		margin: 0
+
+	&-text
+		width: 425px
+		font-size: 15px
+		line-height: 25px
+		letter-spacing: 0.05em
+		color: $var2
+		opacity: 0.6
+		margin: 0
+
+	&-btn
+		width: 220px
+		height: 56px
+		background: $var3
+		box-shadow: 5px 10px 20px rgba(53, 110, 173, 0.2)
+		border-radius: 10px
+		margin-top: 70px
+		outline: none
+		border: none
+		font-size: 15px
+		line-height: 25px
+		text-align: center
+		letter-spacing: 0.04em
+		color: $var4
+		&:hover
+			background: $var2
+
+
+
+.container-whatwedo
+	width: 100%
+	display: flex
+	justify-content: center
+
+.whatwedo__block
+	padding: 192px 0
+	width: 942px
+	box-sizing: border-box
+	display: flex
+	flex-direction: column
+	justify-content: space-between
+	&-title
+		width: 360px
+		h2
+			font-size: 33px
+			line-height: 43px
+			letter-spacing: 0.05em
+			color: $var5
+			margin: 0
+
+
+	&-row
+		display: flex
+		justify-content: space-between
+
+	&-form
+		width: 380px
+		height: 525px
+		background: $var4
+		box-shadow: 5px 20px 50px rgba(16, 112, 177, 0.2)
+		border-radius: 10px
+		display: flex
+		flex-direction: column
+		align-items: center
+		&-image-first
+			padding: 48px 40px 0 0
+
+		&-image-second
+			position: relative
+			top: -20px
+
+		&-image-third
+			padding: 48px 32px 0 0
+
+		&-info
+			padding: 56px 48px 48px
+			box-sizing: border-box
+
+		&-title h6
+			font-size: 18px
+			line-height: 28px
+			letter-spacing: 0.05em
+			color: $var2
+			margin: 0
+
+		&-text
+			font-size: 15px
+			line-height: 25px
+			letter-spacing: 0.05em
+			color: $var2
+			opacity: 0.6
+			margin-bottom: 32px
+
+		a
+			font-size: 14px
+			line-height: 30px
+			letter-spacing: 0.05em
+			color: $var3
+			text-decoration: none
+			position: relative
+			svg
+				fill: $var3
+				margin-left: 24px
+				position: absolute
+				top: -4px
+
+			&:hover
+				color: $var2
+				svg
+					fill: $var2
+.first
+	margin-bottom: 100px
+
+.second
+	margin-left: 60px
+	.whatwedo__block-form:first-child
+		transform: translateY(calc(-50% - 50px))
