@@ -3,6 +3,8 @@ $var2: #1F3F68
 $var3: #5A98D0
 $var4: #FFFFFF
 $var5: #316099
+$var6: #F2F2F2
+$var7: #ffffff
 
 body
 	padding: 0
@@ -169,6 +171,11 @@ body
 				color: $var2
 				svg
 					fill: $var2
+
+
+
+
+
 .first
 	margin-bottom: 100px
 
@@ -176,3 +183,224 @@ body
 	margin-left: 60px
 	.whatwedo__block-form:first-child
 		transform: translateY(calc(-50% - 50px))
+
+
+.container_our_client
+	width: 100%
+	display: flex
+	justify-content: center
+	background: $var3
+	border-radius: 200px 0px 0px 0px
+
+.our_client__block
+	width: 942px
+	position: relative
+	&-info
+		display: flex
+		justify-content: space-between
+		align-items: center
+		margin-top: 96px
+		&-title
+			width: 227px
+			h2
+				font-size: 33px
+				line-height: 43px
+				letter-spacing: 0.05em
+				margin: 0
+				color: $var4
+
+
+		&-text
+			width: 540px
+			font-size: 16px
+			line-height: 25px
+			letter-spacing: 0.05em
+			opacity: 0.6
+			color: $var4
+
+
+	&-table
+		display: flex
+		flex-wrap: wrap
+		margin-top: 125px
+		margin-bottom: 125px
+		&-logo
+			width: 25%
+			text-align: center
+			font-size: 20px
+			line-height: 46px
+			letter-spacing: 0.02em
+			color: $var6
+			border-right: 1px solid $var4
+			box-sizing: border-box
+			padding: 40px 0
+			&:hover
+				background: rgba(31, 63, 104, 0.2)
+
+
+		:nth-child(-n+4)
+			border-bottom: 1px solid $var4
+
+		:nth-child(4n)
+			border-right: none
+
+
+
+.footer__block
+	width: 95%
+	height: 100%
+	top: 0
+	left: 0
+	background: $var5
+	border-radius: 0px 200px 0px 0px
+	z-index: 1
+	&-content
+		width: 100%
+		display: flex
+		justify-content: center
+		z-index: 2
+
+	&-form
+		display: flex
+		justify-content: space-between
+		align-items: center
+		width: 942px
+		padding-top: 91px
+		padding-right: 80px
+		box-sizing: border-box
+		&-info
+			max-width: 460px
+			&-heading
+				font-size: 33px
+				line-height: 43px
+				letter-spacing: 0.05em
+				color: $var4
+				margin: 0 0 32px 0
+
+			&-text
+				font-size: 15px
+				line-height: 25px
+				letter-spacing: 0.05em
+				color: $var4
+				opacity: 0.6
+
+			&-btn
+				width: 220px
+				height: 56px
+				background: $var3
+				border-radius: 10px
+				border: none
+				outline: none
+				font-size: 15px
+				line-height: 25px
+				text-align: center
+				letter-spacing: 0.04em
+				color: $var4
+				&:hover
+					background: $var2
+
+
+
+
+	&-line
+		height: 1px
+		width: 88%
+		background: $var7
+		margin: 96px 0
+		opacity: .4
+		z-index: 2
+
+	&-about
+		width: 100%
+		display: flex
+		justify-content: center
+		z-index: 2
+		&-content
+			display: flex
+			flex-direction: column
+			width: 942px
+			padding-right: 80px
+			box-sizing: border-box
+			&-form
+				display: flex
+				justify-content: space-between
+				box-sizing: border-box
+				&-contacts
+					max-width: 300px
+					&-info
+						display: flex
+						align-items: center
+						margin-bottom: 32px
+						img
+							margin-right: 16px
+							width: 48px
+							height: 48px
+
+						h3
+							font-size: 28px
+							line-height: 46px
+							letter-spacing: 0.02em
+							color: $var4
+							margin: 0
+
+						&-row
+							display: flex
+							justify-content: flex-start
+							margin-bottom: 24px
+							font-size: 15px
+							line-height: 25px
+							letter-spacing: 0.05em
+							color: $var4
+							a
+								text-decoration: none
+								font-size: 15px
+								line-height: 25px
+								letter-spacing: 0.05em
+								color: $var4
+								&:hover
+									opacity: 0.6
+
+							&:last-child
+								margin-bottom: 0
+
+							&-letter
+								margin-right: 16px
+					&-aboutfollow a
+						text-decoration: none
+						font-size: 15px
+						line-height: 25px
+						letter-spacing: 0.05em
+						color: $var4
+						&:hover
+							opacity: 0.6
+					&-aboutandfollow
+						display: flex
+						justify-content: space-between
+
+					&-aboutfollow
+						width: 200px
+						display: flex
+						flex-direction: column
+						&:first-child
+							margin-right: 20px
+
+						p
+							font-size: 20px
+							line-height: 30px
+							letter-spacing: 0.05em
+							color: $var4
+							margin: 0 0 32px
+
+						a
+							margin-bottom: 16px
+			&-rights
+				margin: 64px 0
+				font-size: 15px
+				line-height: 25px
+				letter-spacing: 0.05em
+				color: $var4
+				opacity: 0.4
+
+
+
+
