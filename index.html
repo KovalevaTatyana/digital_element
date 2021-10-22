@@ -97,7 +97,7 @@
                 <h2 class="footer__block-form-info-heading">Interested to work with our team?</h2>
                 <p class="footer__block-form-info-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
               </div>
-              <button class="footer__block-form-info-btn">Let’s Talk</button>
+              <button id="footer__block-form-info-btn">Let’s Talk</button>
             </div>
           </div>
           <div class="footer__block-line"></div>
@@ -151,5 +151,28 @@
         </div>
       </div>
     </div>
+
+    <div id="myModal" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <form class="modal-form">
+          <div class="modal-form-title">Send Us Message</div>
+          <div class="modal-form-group">
+            <div class="modal-form-text">Full Name</div>
+            <input type="text" name="fullname" placeholder="Your Name">
+          </div>
+          <div class="modal-form-group">
+            <div class="modal-form-group">Email</div>
+            <input type="email" name="email" placeholder="Your Email">
+          </div>
+          <div class="modal-form-group">
+            <div class="modal-form-text">Message</div>
+            <textarea name="message" placeholder="Your Message"></textarea>
+          </div>
+          <button type="submit" class="modal-form-btn">SUBMIT</button>
+        </form>
+      </div>
+    </div>
+    <script src="script.js"></script>
   </body>
 </html>

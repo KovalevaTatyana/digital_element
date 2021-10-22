@@ -4,7 +4,11 @@ $var3: #5A98D0
 $var4: #FFFFFF
 $var5: #316099
 $var6: #F2F2F2
-$var7: #ffffff
+$var7: #5a98d0
+$var8: #ffffff
+$var9: #fefefe
+$var10: #888888
+$var11: #aaaaaa
 
 body
 	padding: 0
@@ -246,6 +250,9 @@ body
 
 
 
+.container-footer
+	background: $var7
+
 .footer__block
 	width: 95%
 	height: 100%
@@ -284,28 +291,12 @@ body
 				color: $var4
 				opacity: 0.6
 
-			&-btn
-				width: 220px
-				height: 56px
-				background: $var3
-				border-radius: 10px
-				border: none
-				outline: none
-				font-size: 15px
-				line-height: 25px
-				text-align: center
-				letter-spacing: 0.04em
-				color: $var4
-				&:hover
-					background: $var2
-
-
 
 
 	&-line
 		height: 1px
 		width: 88%
-		background: $var7
+		background: $var8
 		margin: 96px 0
 		opacity: .4
 		z-index: 2
@@ -360,11 +351,15 @@ body
 								&:hover
 									opacity: 0.6
 
+
 							&:last-child
 								margin-bottom: 0
 
 							&-letter
 								margin-right: 16px
+
+
+
 					&-aboutfollow a
 						text-decoration: none
 						font-size: 15px
@@ -373,6 +368,8 @@ body
 						color: $var4
 						&:hover
 							opacity: 0.6
+
+
 					&-aboutandfollow
 						display: flex
 						justify-content: space-between
@@ -393,6 +390,10 @@ body
 
 						a
 							margin-bottom: 16px
+
+
+
+
 			&-rights
 				margin: 64px 0
 				font-size: 15px
@@ -402,5 +403,106 @@ body
 				opacity: 0.4
 
 
+
+
+#footer__block-form-info-btn
+	width: 220px
+	height: 56px
+	background: $var3
+	border-radius: 10px
+	border: none
+	outline: none
+	font-size: 15px
+	line-height: 25px
+	text-align: center
+	letter-spacing: 0.04em
+	color: $var4
+	&:hover
+		background: $var2
+
+
+.modal
+	display: none
+	position: fixed
+	z-index: 1
+	left: 0
+	top: 0
+	width: 100%
+	height: 100%
+	overflow: auto
+	background-color: rgb(0,0,0)
+	background-color: rgba(0,0,0,0.4)
+	&-content
+		background-color: $var9
+		margin: 15% auto
+		padding: 20px
+		border: 1px solid $var10
+		width: 35%
+
+	&-form
+		width: 540px
+		background: $var4
+		border-radius: 10px
+		padding: 56px
+		box-sizing: border-box
+		&-title
+			font-size: 20px
+			line-height: 30px
+			letter-spacing: 0.04em
+			color: $var2
+			margin-bottom: 24px
+			text-transform: uppercase
+
+		&-group
+			width: 428px
+			margin-bottom: 32px
+			input, textarea
+				width: 428px
+				height: 72px
+				border: 1px solid rgba(53, 110, 173, 0.2)
+				box-sizing: border-box
+				border-radius: 10px
+				outline: none
+				padding: 21px 36px
+				font-family: 'Work Sans', sans-serif
+				font-size: 15px
+				line-height: 30px
+				letter-spacing: 0.04em
+				color: rgb(31, 63, 104)
+
+			textarea
+				height: 144px
+				resize: none
+
+
+		&-text
+			font-size: 15px
+			line-height: 30px
+			letter-spacing: 0.04em
+			color: $var2
+			opacity: 0.8
+			margin-bottom: 8px
+
+		&-btn
+			width: 428px
+			height: 72px
+			background: $var3
+			border-radius: 10px
+			outline: none
+			border: none
+			font-size: 15px
+			line-height: 25px
+			text-align: center
+			letter-spacing: 0.04em
+			color: $var4
+.close
+	color: $var11
+	float: right
+	font-size: 28px
+	font-weight: bold
+	&:hover, &:focus
+		color: black
+		text-decoration: none
+		cursor: pointer
 
 
