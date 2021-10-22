@@ -152,22 +152,22 @@
       </div>
     </div>
 
-    <div id="myModal" class="modal">
+    <div id="modal" class="modal">
       <div class="modal-content">
         <span class="close">&times;</span>
-        <form class="modal-form">
+        <form class="modal-form" action="" onsubmit="return validate();">
           <div class="modal-form-title">Send Us Message</div>
           <div class="modal-form-group">
             <div class="modal-form-text">Full Name</div>
-            <input type="text" name="fullname" placeholder="Your Name">
+            <input type="text" name="fullname" id="fullname" placeholder="Your Name">
           </div>
           <div class="modal-form-group">
             <div class="modal-form-group">Email</div>
-            <input type="email" name="email" placeholder="Your Email">
+            <input type="email" name="email" id="email" placeholder="Your Email">
           </div>
           <div class="modal-form-group">
             <div class="modal-form-text">Message</div>
-            <textarea name="message" placeholder="Your Message"></textarea>
+            <textarea name="message" id="message" placeholder="Your Message"></textarea>
           </div>
           <button type="submit" class="modal-form-btn">SUBMIT</button>
         </form>
